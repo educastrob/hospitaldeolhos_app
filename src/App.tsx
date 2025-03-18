@@ -34,23 +34,27 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-blue-600 text-white">
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-4">
-              <Phone size={16} />
-              <span>(73) 3531-3722</span>
-              <Mail size={16} />
-              <span>clinicaipiau@yahoo.com.br</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Clock size={16} />
-              <span>Segunda à Sexta</span>
-            </div>
-          </div>
-        </div>
-      </header>
+		{/* Header */}
+		<header className="bg-blue-600 text-white">
+			<div className="container mx-auto px-4 py-2">
+				<div className="flex flex-col md:flex-row justify-between items-center">
+					<div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+						<div className="flex items-center space-x-2">
+							<Phone size={16} />
+							<span>(73) 3531-3722</span>
+						</div>
+						<div className="flex items-center space-x-2">
+							<Mail size={16} />
+							<span>clinicaipiau@yahoo.com.br</span>
+						</div>
+					</div>
+					<div className="flex items-center space-x-2 mt-2 md:mt-0">
+						<Clock size={16} />
+						<span>Segunda à Sexta</span>
+					</div>
+				</div>
+			</div>
+		</header>
 
       {/* Navigation */}
       <nav className="bg-white shadow-lg sticky top-0 z-50">
