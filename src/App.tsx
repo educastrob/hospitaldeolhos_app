@@ -76,7 +76,7 @@ function App() {
 	<section id="home" className="relative h-[600px]">
 		<div className="absolute inset-0 overflow-hidden">
 			<img
-				src="/src/medicos/hospital-front.jpeg"
+				src="/medicos/hospital-front.jpeg"
 				alt="Eye examination"
 				className="w-full h-full object-cover transform scale-110 object-left"
 			/>
@@ -129,8 +129,8 @@ function App() {
 				<h2 className="text-3xl font-bold text-center mb-12">Nossa Equipe Médica</h2>
 				<div className="grid md:grid-cols-2 gap-8">
 					{[
-						{ name: "Dr. Edmar Ferraz", specialty: "Oftalmologista", image: "/src/medicos/edmar-ferraz.png" },
-						{ name: "Dra. Maria Lucia Ribeiro", specialty: "Oftalmologista", image: "/src/medicos/maria-lucia.jpg" }
+						{ name: "Dr. Edmar Ferraz", specialty: "Oftalmologista", image: "/medicos/edmar-ferraz.png" },
+						{ name: "Dra. Maria Lucia Ribeiro", specialty: "Oftalmologista", image: "/medicos/maria-lucia.jpg" }
 					].map((doctor, index) => (
 						<div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center">
 							<div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
@@ -192,11 +192,11 @@ function App() {
 				<h2 className="text-3xl font-bold text-center mb-12">Convênios</h2>
 				<div className="grid grid-cols-2 md:grid-cols-5 gap-8">
 					{[
-						{ id: 1, image: "/src/convenios/bradesco.png" },
-						{ id: 2, image: "/src/convenios/camed.png" },
-						{ id: 3, image: "/src/convenios/cassi.png" },
-						{ id: 4, image: "/src/convenios/sulamerica.webp" },
-						{ id: 5, image: "/src/convenios/unimed.png" }
+						{ id: 1, image: "/convenios/bradesco.png" },
+						{ id: 2, image: "/convenios/camed.png" },
+						{ id: 3, image: "/convenios/cassi.png" },
+						{ id: 4, image: "/convenios/sulamerica.webp" },
+						{ id: 5, image: "/convenios/unimed.png" }
 					].map((item) => (
 						<div key={item.id} className="bg-gray-100 p-8 rounded-lg flex items-center justify-center">
 							<img src={item.image} alt={`Convênio ${item.id}`} className="max-w-full max-h-16 object-contain" />
